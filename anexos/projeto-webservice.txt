@@ -1,0 +1,38 @@
+Certamente! Aqui está o escopo do projeto dividido nas diferentes etapas, sem referências a primeira ou terceira pessoa:
+
+Configuração do Ambiente:
+
+Instalação do framework Django e outras bibliotecas necessárias para o desenvolvimento do projeto.
+Configuração do ambiente de desenvolvimento, incluindo definição das configurações do banco de dados.
+Criação de Usuários e Autenticação:
+
+Implementação da funcionalidade de cadastro e autenticação de usuários, abrangendo clientes e funcionários.
+Utilização do sistema de autenticação do Django para garantir a segurança das contas.
+Página do Cliente:
+
+Criação de uma página de login para os clientes acessarem.
+Desenvolvimento da funcionalidade de envio de arquivos (XML de pedido) por parte dos clientes.
+Página dos Funcionários (Armazém):
+
+Criação de uma página de login específica para os funcionários do armazém.
+Implementação da funcionalidade de visualização e separação dos pedidos recebidos.
+Funcionalidades dos Funcionários:
+
+Capacidade para os funcionários marcarem os pedidos que estão prontos para faturamento.
+Geração e Envio de Faturas (XML):
+
+Automação da geração do XML de fatura correspondente a partir das informações do pedido.
+Implementação da funcionalidade de envio da fatura (XML) para o cliente por meio da plataforma.
+Conversão de XML para PDF:
+
+Estabelecimento de um processo automatizado que detecta quando um novo XML de fatura é recebido.
+Utilização de biblioteca apropriada para transformar o XML em um PDF de Nota Fiscal.
+Retorno ao Cliente:
+
+Implementação da funcionalidade que notifica o cliente sobre a disponibilidade da fatura (PDF).
+Disponibilização de um link para download do PDF da Nota Fiscal na plataforma.
+Melhorias Graduais:
+
+Identificação e implementação de melhorias adicionais conforme o desenvolvimento avança.
+Possíveis melhorias incluem acompanhamento de status de pedidos, histórico de pedidos e personalização de PDF.
+Este escopo é uma base sólida para o desenvolvimento do projeto e abrange as principais funcionalidades e etapas necessárias para criar o sistema que você descreveu. À medida que você avança, poderá adicionar mais detalhes e refinamentos a cada etapa, ajustando conforme necessário para atender às necessidades específicas do seu projeto.
