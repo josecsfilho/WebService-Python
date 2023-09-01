@@ -75,7 +75,9 @@ WSGI_APPLICATION = 'webservice.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'carreiradev.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'webservice.settings')
+
+
 
 DATABASES = {
     'default': {
@@ -83,7 +85,15 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'carreiradev.settings')
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://default:57b518c05dd644b5aa1651cca7163046@tight-lion-32887.kv.vercel-storage.com:32887",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
